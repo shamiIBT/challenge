@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+.main {
+  margin: 100px;
+  display: flex;
+  width: 450px;
+  height: 335px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+}
+.image-perfume {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  padding: 20px;
+}
+.perfume {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+  color: hsl(228, 12%, 48%);
+}
+.perfume-name {
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 10px;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px;
+}
+.price-now {
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  color: hsl(158, 36%, 37%);
+}
+.price-then {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+.cart-icon {
+  width: 12px;
+}
+.buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 45px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.buy-btn:hover {
+  cursor: pointer;
+  background-color: hsl(155, 62%, 22%);
+}
+
+@media screen and (max-width: 375px) {
+  .image-perfume {
+    width: 100%;
+    object-fit: cover;
+  }
+  .main {
+    margin: 0;
+    width: 300px;
+    height: 580px;
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+    height: 50%;
+  }
+  .container {
+    width: 100%;
+  }
+}
